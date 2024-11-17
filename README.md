@@ -1,9 +1,11 @@
-# Ex.No:1a  			Study of Socket Programming
+# Ex.No:1a Study of Socket Programming
+
+# Name: Sandeep S
+# Reg : 212223220092
 
 ## Aim: 
 To perform a study on Socket Programming
 ## Introduction:
-
  	Socket programming is a crucial aspect of network communication, allowing for data exchange between computers over a network. It forms the backbone of various networked applications, enabling communication between clients and servers. This study explores the fundamental concepts of socket programming, its use cases, and provides a practical example to demonstrate its implementation.
 ## Understanding Socket Programming:
 	Socket programming involves the use of sockets, which serve as endpoints for communication. A socket is identified by an IP address and a port number, and it facilitates data transfer between a client and a server. The two main types of sockets are Stream Sockets, which provide a reliable, connection-oriented communication, and Datagram Sockets, which are connectionless and suitable for scenarios where reliability is less critical.
@@ -39,14 +41,11 @@ To perform a study on Socket Programming
 •	shed, servers can send and receive data using send() and recv().
 
 ## Client –Server Operations
-
 Clients create a socket using socket() and connect to a server using connect().
 After establishing a connection, clients can send and receive data using send() and recv().
-
 ## Use Cases of Socket Programming:
 Socket programming finds applications in various domains, including web development, file transfer protocols, online gaming, and real-time communication. It is the foundation for protocols like HTTP, FTP, and SMTP, which power the internet. Socket programming enables the development of both server and client applications, facilitating the exchange of information between devices in a networked environment.
 ## Example Use Cases:
-
 1.	Web servers: Web servers use socket programming to handle incoming HTTP requests from clients, serving web pages and content.
 2.	Chat Application: Instant messaging and chat applications use sockets to enable real-time communication between users.
 3.	File Transfer Protocol: Protocols like FTP (File Transfer Protocol) utilize socket programming for transferring files between a client and a server.
@@ -54,7 +53,6 @@ Socket programming finds applications in various domains, including web developm
 5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
 
 ## CLIENT
-
 ```
 import socket
 from datetime import datetime
@@ -70,23 +68,16 @@ if ack:
     print(ack)
 c.close()
 ```
-
 ## SERVER
-
 ```
-
 import socket
 s = socket.socket()
 s.connect(('localhost', 8000))  
 while True:
     print(s.recv(1024).decode())
     s.send("Acknowledgement Received".encode())
-
 ```
 ## OUTPUT
-
 ![WhatsApp Image 2024-09-14 at 11 02 16_a007dd8e](https://github.com/user-attachments/assets/c7a8e56c-9136-4c47-a3d7-4e35d191eb56)
-
-
 ## Result:
 Thus the study of Socket Programming Completed Successfully
